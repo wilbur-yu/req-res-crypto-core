@@ -202,8 +202,8 @@ interface NonceStoreInterface
 
 | 框架 | 包 | 功能 |
 | --- | --- | --- |
-| Hyperf | [req-res-crypto-hyperf](https://github.com/wilbur-yu/req-res-crypto-hyperf) | PSR-15 中间件、数据库密钥轮换、Crontab、Artisan 命令 |
-| Laravel | [req-res-crypto-laravel](https://github.com/wilbur-yu/req-res-crypto-laravel) | 中间件、Facade、注解驱动加解密、数据库密钥轮换 |
+| Hyperf | [req-res-crypto-hyperf](https://github.com/wilbur-yu/req-res-crypto-hyperf) | PSR-15 中间件、数据库密钥轮换、Crontab、Command 命令 |
+| Laravel | [req-res-crypto-laravel](https://github.com/wilbur-yu/req-res-crypto-laravel) | 中间件、Facade、注解驱动加解密、数据库密钥轮换、Artisan 命令 |
 
 ## 前端对接
 
