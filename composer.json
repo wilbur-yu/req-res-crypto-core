@@ -1,5 +1,5 @@
 {
-  "name": "wenbo/req-res-crypto-core",
+  "name": "wenber-yu/req-res-crypto-core",
   "description": "PHP request-response encryption core: Ed25519 signing, X25519 key exchange, XChaCha20-Poly1305 AEAD encryption. Zero framework dependencies.",
   "type": "library",
   "license": "MIT",
