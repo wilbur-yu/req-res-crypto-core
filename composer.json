@@ -1,0 +1,45 @@
+{
+  "name": "wenbo/req-res-crypto-core",
+  "description": "PHP request-response encryption core: Ed25519 signing, X25519 key exchange, XChaCha20-Poly1305 AEAD encryption. Zero framework dependencies.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wenbo",
+      "homepage": "https://wenber.club"
+    }
+  ],
+  "require": {
+    "php": ">=8.3",
+    "ext-sodium": "*",
+    "ext-pdo": "*",
+    "ext-redis": "*"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.0",
+    "phpstan/phpstan": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wenbo\\ReqResCrypto\\Core\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wenbo\\ReqResCrypto\\Core\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "test:coverage": "pest --coverage",
+    "analyse": "phpstan analyse src --level=max"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "version": "0.1.0"
+}
