@@ -195,19 +195,19 @@ interface NonceStoreInterface
 
 核心包仅定义 `ServerKeyProviderInterface`，完整的密钥轮换（数据库持久化、定时 Crontab、Artisan 命令）由框架适配包提供：
 
-- [req-res-crypto-hyperf](https://github.com/wilbur-yu/req-res-crypto-hyperf) — Hyperf 适配
-- [req-res-crypto-laravel](https://github.com/wilbur-yu/req-res-crypto-laravel) — Laravel 适配
+- [req-res-crypto-hyperf](https://github.com/wenber-yu/req-res-crypto-hyperf) — Hyperf 适配
+- [req-res-crypto-laravel](https://github.com/wenber-yu/req-res-crypto-laravel) — Laravel 适配
 
 ## 框架适配
 
 | 框架 | 包 | 功能 |
 | --- | --- | --- |
-| Hyperf | [req-res-crypto-hyperf](https://github.com/wilbur-yu/req-res-crypto-hyperf) | PSR-15 中间件、数据库密钥轮换、Crontab、Command 命令 |
-| Laravel | [req-res-crypto-laravel](https://github.com/wilbur-yu/req-res-crypto-laravel) | 中间件、Facade、注解驱动加解密、数据库密钥轮换、Artisan 命令 |
+| Hyperf | [req-res-crypto-hyperf](https://github.com/wenber-yu/req-res-crypto-hyperf) | PSR-15 中间件、数据库密钥轮换、Crontab、Command 命令 |
+| Laravel | [req-res-crypto-laravel](https://github.com/wenber-yu/req-res-crypto-laravel) | 中间件、Facade、注解驱动加解密、数据库密钥轮换、Artisan 命令 |
 
 ## 前端对接
 
-前端（浏览器）客户端 [req-res-crypto-js](https://github.com/wilbur-yu/req-res-crypto-js)，提供 axios / fetch 透明加解密集成。客户端每次请求动态生成 X25519 密钥对（~0.05ms），公钥嵌入 wire，用完即弃。
+前端（浏览器）客户端 [req-res-crypto-js](https://github.com/wenber-yu/req-res-crypto-js)，提供 axios / fetch 透明加解密集成。客户端每次请求动态生成 X25519 密钥对（~0.05ms），公钥嵌入 wire，用完即弃。
 
 ```bash
 npm install @wenbo/req-res-crypto-js
